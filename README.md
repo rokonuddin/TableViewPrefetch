@@ -41,7 +41,9 @@ func tableView(_ tableView: UITableView, cancelPrefetchingForRowsAt indexPaths: 
 	}
 }
 ```
-###Loading Data Asynchronously
+
+### Loading Data Asynchronously
+
 Unlike `tableView(_:cellForRowAt:)`, the `tableView(_:prefetchRowsAt:)` method is not necessarily called for every cell in the table view. It is called for cells that are not visible in the screen. Implementation of `tableView(_:cellForRowAt:)` therefore must be able to handle the following potential situations
 
 * Data has been loaded via the prefetch request, and is ready to be displayed.
